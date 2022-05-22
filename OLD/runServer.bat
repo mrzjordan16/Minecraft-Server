@@ -1,0 +1,1 @@
+java -Xmx8096M -Xms8096M -jar paper-283.jar nogui
