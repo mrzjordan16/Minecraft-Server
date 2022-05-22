@@ -2,28 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  minecraft-server
-  namespace: minecraft
   labels:
     app: minecraft-server
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: minecraft-server
   template:
     metadata:
       labels:
-        app: minecraft-server
+        name:  minecraft-server
     spec:
-      restartPolicy: Always
-      volumes:
-          - name: minecraft-data
-            persistentVolumeClaim:
-              claimName: minecraft-data-pvc 
       containers:
       - image:  mnehalb/nt-minecraft
         name:  minecraft-container
-        imagePullPolicy: Always  
         resources:
           requests:
             cpu: "2"
@@ -35,7 +25,19 @@ spec:
           name:  mc-port
         volumeMounts:
           - name: minecraft-data
-            mountPath:  /data 
+            mountPath:  /data
+        volumes:
+          - name: minecraft-data
+            persistentVolumeClaim:
+              claimName: minecraft-data-pvc  
+        readinessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+      restartPolicy: Always
+      imagePullPolicy: Always
 ---
 kind: Service
 apiVersion: v1

@@ -2,18 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  minecraft-server
-  namespace: minecraft
   labels:
     app: minecraft-server
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: minecraft-server
   template:
     metadata:
       labels:
-        app: minecraft-server
+        name:  minecraft-server
     spec:
       restartPolicy: Always
       volumes:
@@ -36,6 +32,13 @@ spec:
         volumeMounts:
           - name: minecraft-data
             mountPath:  /data 
+        readinessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+      
 ---
 kind: Service
 apiVersion: v1

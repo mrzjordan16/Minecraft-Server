@@ -36,6 +36,13 @@ spec:
         volumeMounts:
           - name: minecraft-data
             mountPath:  /data 
+        readinessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+      
 ---
 kind: Service
 apiVersion: v1
