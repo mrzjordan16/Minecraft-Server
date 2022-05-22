@@ -1,0 +1,49 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name:  minecraft
+  labels:
+    app: minecraft-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name:  minecraft-server
+    spec:
+      containers:
+      - image:  mnehalb/nt-minecraft
+        name:  minecraft-container
+        resources:
+          requests:
+            cpu: "2"
+            memory: "2Gi"
+          limits:
+            memory: 4Gi         
+        ports:
+        - containerPort:  25565
+          name:  mc-port
+        volumeMounts:
+          - name: minecraft-data
+            mountPath:  /data
+        readinessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30
+      restartPolicy: Always
+      imagePullPolicy: Always
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: minecraft-service
+spec:
+  selector:
+    app:  minecraft-server
+  type:  LoadBalancer 
+  ports:
+  - name:  mc-port
+    port:  80
+    targetPort:  25565
