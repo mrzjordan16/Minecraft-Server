@@ -1,7 +1,7 @@
 # Minecraft-Server
-Custom Docker Images 
+**Custom Docker Images **
 
-mnehalb/nt-minecraft:<type-of-version>
+mnehalb/nt-minecraft:*type-of-version
 
 **version:**
   
