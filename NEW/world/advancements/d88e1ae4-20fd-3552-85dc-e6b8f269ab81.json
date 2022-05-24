@@ -245,6 +245,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
+    },
+    "done": true
+  },
   "diamethysts:tools/diamethyst_iron_shovel": {
     "criteria": {
       "has_items": "2022-05-19 00:24:47 +0300"
@@ -344,6 +350,12 @@
   "minecraft:recipes/building_blocks/coarse_dirt": {
     "criteria": {
       "has_gravel": "2022-05-18 23:06:35 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
     },
     "done": true
   },
@@ -848,6 +860,12 @@
   "alltheores:recipes/alltheores/tin_ingot_from_raw_blasting": {
     "criteria": {
       "has_item": "2022-05-19 13:30:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2022-05-24 03:31:26 +0300"
     },
     "done": true
   },
@@ -1645,6 +1663,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stripped_oak_wood": {
+    "criteria": {
+      "has_log": "2022-05-23 20:48:27 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/orange_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2022-05-20 17:27:02 +0300"
@@ -2190,6 +2214,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
+    },
+    "done": true
+  },
   "cgm:recipes/cgm/machine_pistol": {
     "criteria": {
       "has_iron_ingot": "2022-05-19 21:02:05 +0300"
@@ -2235,6 +2265,12 @@
   "minecraft:recipes/combat/bow": {
     "criteria": {
       "has_string": "2022-05-18 23:47:28 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
     },
     "done": true
   },
@@ -2893,6 +2929,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diorite_stairs": {
     "criteria": {
       "has_diorite": "2022-05-18 22:33:14 +0300"
@@ -3353,6 +3395,12 @@
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2022-05-19 00:24:47 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2022-05-24 03:56:25 +0300"
     },
     "done": true
   },

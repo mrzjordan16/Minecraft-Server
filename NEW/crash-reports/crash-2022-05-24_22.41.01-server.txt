@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 5/24/22, 10:41 PM
+Description: Exception in server tick loop
+
+java.net.UnknownHostException: 178.152.85.55:25565: invalid IPv6 address
+	at java.net.InetAddress.getAllByName(InetAddress.java:1471) ~[?:?] {}
+	at java.net.InetAddress.getByName(InetAddress.java:1389) ~[?:?] {}
+	at net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServer.java:134) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 18.0.1.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1461437384 bytes (1393 MiB) / 2342518784 bytes (2234 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Xeon(R) CPU           X5670  @ 2.93GHz
+	Identifier: Intel64 Family 6 Model 44 Stepping 2
+	Microarchitecture: Westmere (Server)
+	Frequency (GHz): 2.94
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Radeon RX 570 Series
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x67df
+	Graphics card #0 versionInfo: DriverVersion=30.0.15021.11005
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 1.33
+	Memory slot #0 type: Other
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 1.33
+	Memory slot #1 type: Other
+	Memory slot #2 capacity (MB): 4096.00
+	Memory slot #2 clockSpeed (GHz): 1.33
+	Memory slot #2 type: Other
+	Memory slot #3 capacity (MB): 4096.00
+	Memory slot #3 clockSpeed (GHz): 1.33
+	Memory slot #3 type: Other
+	Virtual memory max (MB): 34807.11
+	Virtual memory used (MB): 15440.78
+	Swap memory total (MB): 18432.00
+	Swap memory used (MB): 105.27
+	JVM Flags: 1 total; -Xmx4G
+	Server Running: true
+	Data Packs: vanilla, mod:forge (incompatible), mod:scorpions (incompatible), mod:amethystequipment (incompatible), mod:additionaladditions (incompatible), mod:another_furniture, mod:jei (incompatible), mod:stardewarmory (incompatible), mod:spark (incompatible), mod:invmove (incompatible), mod:curios (incompatible), mod:diamethysts, mod:journeymap, mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:untamedwilds (incompatible), mod:framedblocks, mod:fire_extinguisher, mod:dungeoncrawl, mod:worldedit (incompatible), mod:bagofholding (incompatible), mod:additionalstructures, mod:puzzleslib (incompatible), mod:cloth_config (incompatible), mod:aquaculture (incompatible), mod:tlskincape (incompatible), mod:alltheores, mod:useless_sword, mod:cgm, mod:mekanismadditions, mod:mekanism, mod:mekanismtools, mod:mekanismgenerators, mod:framework (incompatible)
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+	Mod List: 
+		server-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |DONE      |Manifest: NOSIGNATURE
+		scorpions-1-18-x.jar                              |YDM's Scorpions               |scorpions                     |1.18.x-1.1          |DONE      |Manifest: NOSIGNATURE
+		Amethyst-Equipment-Mod-Forge-1.18.2.jar           |Amethyst Equipment            |amethystequipment             |1.18.2              |DONE      |Manifest: NOSIGNATURE
+		cgm-1.2.1-1.18.2.jar                              |MrCrayfish's Gun Mod          |cgm                           |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		MekanismAdditions-1.18.2-10.2.0.459.jar           |Mekanism: Additions           |mekanismadditions             |10.2.0              |DONE      |Manifest: NOSIGNATURE
+		additionaladditions-4.0.0.jar                     |Additional Additions          |additionaladditions           |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		another_furniture-1.18.2-1.0.3.jar                |Another Furniture Mod         |another_furniture             |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		jei-1.18.2-9.7.0.193.jar                          |Just Enough Items             |jei                           |9.7.0.193           |DONE      |Manifest: NOSIGNATURE
+		Stardew-Armory-Mod-1.18.2.jar                     |Stardew Armory                |stardewarmory                 |1.18.2-1.3.9        |DONE      |Manifest: NOSIGNATURE
+		spark-1.9.1-forge.jar                             |spark                         |spark                         |1.9.1               |DONE      |Manifest: NOSIGNATURE
+		Mekanism-1.18.2-10.2.0.459.jar                    |Mekanism                      |mekanism                      |10.2.0              |DONE      |Manifest: NOSIGNATURE
+		InvMove-1.18-0.7.0-Forge.jar                      |InvMove                       |invmove                       |0.7.0               |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.18.2-5.0.7.0.jar                   |Curios API                    |curios                        |1.18.2-5.0.7.0      |DONE      |Manifest: NOSIGNATURE
+		Diamethysts!-Mod-1.18.2.jar                       |Diamethysts                   |diamethysts                   |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		Journey_-Map-Mod-1.18.2.jar                       |Journeymap                    |journeymap                    |5.8.0beta18         |DONE      |Manifest: NOSIGNATURE
+		citadel-1.11.3-1.18.2.jar                         |Citadel                       |citadel                       |1.11.3              |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.18.3.jar                              |Alex's Mobs                   |alexsmobs                     |1.18.3              |DONE      |Manifest: NOSIGNATURE
+		untamedwilds-1.18.2-2.1.3.jar                     |Untamed Wilds                 |untamedwilds                  |2.1.3               |DONE      |Manifest: NOSIGNATURE
+		Framed-Blocks-Mod-Forge-1.18.2.jar                |FramedBlocks                  |framedblocks                  |5.1.1               |DONE      |Manifest: NOSIGNATURE
+		Fire-Extinguisher-Mod-1.18.2.jar                  |Fire Extinguisher             |fire_extinguisher             |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		DungeonCrawl-1.18.2-2.3.8.jar                     |Dungeon Crawl                 |dungeoncrawl                  |2.3.8               |DONE      |Manifest: NOSIGNATURE
+		worldedit-mod-7.2.10.jar                          |WorldEdit                     |worldedit                     |7.2.10+1742f98      |DONE      |Manifest: NOSIGNATURE
+		BagOfHolding-v3.1.0-1.18.2-Forge.jar              |Bag Of Holding                |bagofholding                  |3.1.0               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		MekanismTools-1.18.2-10.2.0.459.jar               |Mekanism: Tools               |mekanismtools                 |10.2.0              |DONE      |Manifest: NOSIGNATURE
+		Rex's-AdditionalStructures-1.18.2-(v.3.0.3).jar   |Additional Structures         |additionalstructures          |3.0.3               |DONE      |Manifest: NOSIGNATURE
+		MekanismGenerators-1.18.2-10.2.0.459.jar          |Mekanism: Generators          |mekanismgenerators            |10.2.0              |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v3.3.3-1.18.2-Forge.jar                |Puzzles Lib                   |puzzleslib                    |3.3.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		framework-0.2.3-1.18.2.jar                        |Framework                     |framework                     |0.2.3               |DONE      |Manifest: NOSIGNATURE
+		cloth-config-6.2.62-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.2.62              |DONE      |Manifest: NOSIGNATURE
+		forge-1.18.2-40.1.0-universal.jar                 |Forge                         |forge                         |40.1.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		Aquaculture-1.18.2-2.3.6.jar                      |Aquaculture 2                 |aquaculture                   |1.18.2-2.3.6        |DONE      |Manifest: NOSIGNATURE
+		tl_skin_cape_forge_1.18_1.18.2-1.25.jar           |TLSkinCape                    |tlskincape                    |1.25                |DONE      |Manifest: 19:f5:ce:44:81:0c:e4:22:05:5e:73:c5:a8:cd:de:f3:c8:cf:a9:b3:01:70:40:a0:ee:2d:50:7a:1c:3d:1c:8a
+		alltheores-1.9.5-1.18.2-40.1.0.jar                |AllTheOres                    |alltheores                    |1.9.5-1.18.2-40.1.0 |DONE      |Manifest: NOSIGNATURE
+		Useless-Swords-Mod-1.18.2.jar                     |Useless Sword                 |useless_sword                 |1.4.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 3c19625c-2a31-447b-9a4f-c60abc8ec66d
+	FramedBlocks BlockEntity Warning: Not applicable
+	FML: 40.1
+	Forge: net.minecraftforge:40.1.0

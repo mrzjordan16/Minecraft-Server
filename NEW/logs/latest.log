@@ -1,84 +1,329 @@
-[22May2022 23:13:43.686] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 40.1.0, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914]
-[22May2022 23:13:43.703] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 18.0.1.1 by Oracle Corporation
-[22May2022 23:13:44.539] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/minecraft%20server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=SERVER
-[22May2022 23:13:50.670] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[22May2022 23:13:50.984] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [org.tlauncher.MixinConnector]
-[22May2022 23:13:51.010] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[22May2022 23:13:51.483] [main/FATAL] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER
-[22May2022 23:13:51.484] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/player/AbstractClientPlayer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER)
-[22May2022 23:13:51.485] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.player.AbstractClientPlayer was not found tlskincape-mixins.json:MixinAbstractPlayer
-[22May2022 23:13:51.488] [main/FATAL] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER
-[22May2022 23:13:51.490] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/TitleScreen (java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER)
-[22May2022 23:13:51.491] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.TitleScreen was not found tlskincape-mixins.json:MixinMainMenu
-[22May2022 23:13:51.492] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/model/PlayerModel (java.lang.ClassNotFoundException: net.minecraft.client.model.PlayerModel)
-[22May2022 23:13:51.493] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.model.PlayerModel was not found tlskincape-mixins.json:MixinPlayerModel
-[22May2022 23:14:08.952] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Items ...
-[22May2022 23:14:08.992] [modloading-worker-0/INFO] [Dungeon Crawl/]: Here we go! Launching Dungeon Crawl 2.3.8...
-[22May2022 23:14:08.994] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Blocks ...
-[22May2022 23:14:09.127] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Common config ...
-[22May2022 23:14:09.394] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 40.1.0, for MC 1.18.2 with MCP 20220404.173914
-[22May2022 23:14:09.408] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v40.1.0 Initialized
-[22May2022 23:14:23.008] [main/INFO] [Puzzles Lib/]: Registering 3 element(s) to registry of type minecraft:item for mod id bagofholding
-[22May2022 23:14:23.578] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_aluminum] has been registered twice for the same name alltheores:dirty_aluminum.
-[22May2022 23:14:23.640] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_nickel] has been registered twice for the same name alltheores:dirty_nickel.
-[22May2022 23:14:23.707] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_platinum] has been registered twice for the same name alltheores:dirty_platinum.
-[22May2022 23:14:23.747] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_silver] has been registered twice for the same name alltheores:dirty_silver.
-[22May2022 23:14:23.779] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_tin] has been registered twice for the same name alltheores:dirty_tin.
-[22May2022 23:14:23.797] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_zinc] has been registered twice for the same name alltheores:dirty_zinc.
-[22May2022 23:14:23.819] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_aluminum] has been registered twice for the same name alltheores:clean_aluminum.
-[22May2022 23:14:23.865] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_nickel] has been registered twice for the same name alltheores:clean_nickel.
-[22May2022 23:14:23.956] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_platinum] has been registered twice for the same name alltheores:clean_platinum.
-[22May2022 23:14:24.029] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_silver] has been registered twice for the same name alltheores:clean_silver.
-[22May2022 23:14:24.116] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_tin] has been registered twice for the same name alltheores:clean_tin.
-[22May2022 23:14:24.133] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_zinc] has been registered twice for the same name alltheores:clean_zinc.
-[22May2022 23:14:24.251] [main/INFO] [Puzzles Lib/]: Registering 1 element(s) to registry of type minecraft:enchantment for mod id bagofholding
-[22May2022 23:14:25.834] [main/INFO] [Puzzles Lib/]: Registering 3 element(s) to registry of type minecraft:menu for mod id bagofholding
-[22May2022 23:14:26.341] [main/INFO] [Puzzles Lib/]: Registering 1 element(s) to registry of type minecraft:recipe_serializer for mod id bagofholding
-[22May2022 23:14:27.245] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexthe666.alexsmobs.entity.EntityLeafcutterAnt from class com.github.alexthe666.alexsmobs.entity.EntityDevilsHolePupfish
-[22May2022 23:14:27.289] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexthe666.alexsmobs.entity.EntityMantisShrimp from class com.github.alexthe666.alexsmobs.entity.EntitySkelewag
-[22May2022 23:14:27.368] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class untamedwilds.entity.ComplexMobTerrestrial from class untamedwilds.entity.ComplexMob
-[22May2022 23:14:27.421] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class untamedwilds.entity.ComplexMobTerrestrial from class untamedwilds.entity.ComplexMob
-[22May2022 23:14:29.520] [main/INFO] [alltheores/]: AllTheOres: loading config
-[22May2022 23:14:29.605] [Thread-0/INFO] [alltheores/]: AllTheOres: loading config
-[22May2022 23:14:29.807] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism: Additions' module.
-[22May2022 23:14:29.871] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism Generators' module.
-[22May2022 23:14:29.832] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism: Tools' module.
-[22May2022 23:14:29.822] [modloading-worker-0/INFO] [untamedwilds.UntamedWilds/]: Registering Packets!
-[22May2022 23:14:29.816] [modloading-worker-0/INFO] [Dungeon Crawl/]: Common Setup
-[22May2022 23:14:29.810] [modloading-worker-0/INFO] [diamethysts/]: Diamethysts common setup
-[22May2022 23:14:29.807] [modloading-worker-0/INFO] [Mekanism/]: Version 10.2.0 initializing...
-[22May2022 23:14:30.525] [modloading-worker-0/INFO] [Mekanism/]: Fake player readout: UUID = 46e82cd0-d480-3d48-800a-77431ede078e, name = [Mekanism]
-[22May2022 23:14:30.646] [modloading-worker-0/INFO] [Mekanism/]: Mod loaded.
-[22May2022 23:14:32.074] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Starting version check at https://raw.githubusercontent.com/MrCrayfish/ModUpdates/master/cgm/update.json
-[22May2022 23:14:34.137] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Found status: BETA Current: 1.2.1 Target: null
-[22May2022 23:14:34.241] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Starting version check at https://forge.curseupdate.com/32274/journeymap
-[22May2022 23:14:34.457] [modloading-worker-0/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Got request to register class com.sk89q.worldedit.forge.ForgePlatform with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@fc61ad2]
-[22May2022 23:14:34.560] [modloading-worker-0/INFO] [com.sk89q.worldedit.forge.ForgeWorldEdit/]: WorldEdit for Forge (version 7.2.10+1742f98) is loaded
-[22May2022 23:14:34.720] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:aiming for minecraft:player
-[22May2022 23:14:34.776] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:shooting for minecraft:player
-[22May2022 23:14:34.838] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:reloading for minecraft:player
-[22May2022 23:14:34.910] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Found status: OUTDATED Current: 5.8.0beta18 Target: 5.8.4
-[22May2022 23:14:34.929] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bagofholding] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/bagofholding.json
-[22May2022 23:14:34.959] [main/INFO] [journeymap/]: Initializing Packet Registries
-[22May2022 23:14:35.091] [main/INFO] [Dungeon Crawl/]: Registering Structure Piece Types
-[22May2022 23:14:35.190] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bagofholding] Found status: UP_TO_DATE Current: 3.1.0 Target: null
-[22May2022 23:14:35.206] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Starting version check at https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/AdditionalStructures.json
-[22May2022 23:14:35.530] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Found status: UP_TO_DATE Current: 3.0.3 Target: null
-[22May2022 23:14:35.641] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/puzzleslib.json
-[22May2022 23:14:35.793] [modloading-worker-0/INFO] [diamethysts/]: Diamethysts server setup
-[22May2022 23:14:35.833] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Found status: UP_TO_DATE Current: 3.3.3 Target: null
-[22May2022 23:14:35.943] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Starting version check at https://mrcrayfish.com/modupdatejson?id=framework
-[22May2022 23:14:37.170] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Found status: BETA Current: 0.2.3 Target: 0.2.3
-[22May2022 23:14:37.341] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[22May2022 23:14:38.247] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 40.1.0 Target: null
-[22May2022 23:14:44.171] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22May2022 23:14:51.924] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/minecraft%20server/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2371!/assets/.mcassetsroot' uses unexpected schema
-[22May2022 23:14:52.034] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/minecraft%20server/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2371!/data/.mcassetsroot' uses unexpected schema
-[22May2022 23:15:11.790] [main/INFO] [com.sk89q.worldedit.extension.platform.PlatformCommandManager/]: Registering commands with com.sk89q.worldedit.forge.ForgePlatform
-[22May2022 23:15:12.123] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22May2022 23:15:12.171] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22May2022 23:15:12.211] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22May2022 23:15:12.214] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22May2022 23:15:12.254] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22May2022 23:15:12.361] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, create, name, dimension, location, color, announce] and [waypoint, create, name, dimension, location, color, player] with inputs: [true, false]
-[22May2022 23:15:12.415] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, delete, name, announce] and [waypoint, delete, name, player] with inputs: [true, false]
+[24May2022 23:11:17.757] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 40.1.0, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914]
+[24May2022 23:11:17.763] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 18.0.1.1 by Oracle Corporation
+[24May2022 23:11:18.010] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/minecraft%20server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=SERVER
+[24May2022 23:11:21.385] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[24May2022 23:11:21.527] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [org.tlauncher.MixinConnector]
+[24May2022 23:11:21.543] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[24May2022 23:11:21.761] [main/FATAL] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER
+[24May2022 23:11:21.762] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/player/AbstractClientPlayer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER)
+[24May2022 23:11:21.762] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.player.AbstractClientPlayer was not found tlskincape-mixins.json:MixinAbstractPlayer
+[24May2022 23:11:21.765] [main/FATAL] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER
+[24May2022 23:11:21.765] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/TitleScreen (java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER)
+[24May2022 23:11:21.766] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.TitleScreen was not found tlskincape-mixins.json:MixinMainMenu
+[24May2022 23:11:21.768] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/model/PlayerModel (java.lang.ClassNotFoundException: net.minecraft.client.model.PlayerModel)
+[24May2022 23:11:21.768] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.model.PlayerModel was not found tlskincape-mixins.json:MixinPlayerModel
+[24May2022 23:11:35.306] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Items ...
+[24May2022 23:11:35.307] [modloading-worker-0/INFO] [Dungeon Crawl/]: Here we go! Launching Dungeon Crawl 2.3.8...
+[24May2022 23:11:35.390] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Blocks ...
+[24May2022 23:11:35.425] [modloading-worker-0/INFO] [Fire Extinguisher/]: Register Fire Extinguisher Common config ...
+[24May2022 23:11:35.605] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 40.1.0, for MC 1.18.2 with MCP 20220404.173914
+[24May2022 23:11:35.632] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v40.1.0 Initialized
+[24May2022 23:11:45.727] [main/INFO] [Puzzles Lib/]: Registering 3 element(s) to registry of type minecraft:item for mod id bagofholding
+[24May2022 23:11:46.002] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_aluminum] has been registered twice for the same name alltheores:dirty_aluminum.
+[24May2022 23:11:46.032] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_nickel] has been registered twice for the same name alltheores:dirty_nickel.
+[24May2022 23:11:46.042] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_platinum] has been registered twice for the same name alltheores:dirty_platinum.
+[24May2022 23:11:46.069] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_silver] has been registered twice for the same name alltheores:dirty_silver.
+[24May2022 23:11:46.100] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_tin] has been registered twice for the same name alltheores:dirty_tin.
+[24May2022 23:11:46.102] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:dirty_zinc] has been registered twice for the same name alltheores:dirty_zinc.
+[24May2022 23:11:46.133] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_aluminum] has been registered twice for the same name alltheores:clean_aluminum.
+[24May2022 23:11:46.140] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_nickel] has been registered twice for the same name alltheores:clean_nickel.
+[24May2022 23:11:46.168] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_platinum] has been registered twice for the same name alltheores:clean_platinum.
+[24May2022 23:11:46.177] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_silver] has been registered twice for the same name alltheores:clean_silver.
+[24May2022 23:11:46.185] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_tin] has been registered twice for the same name alltheores:clean_tin.
+[24May2022 23:11:46.202] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry mekanism:slurry: The object [Slurry: alltheores:clean_zinc] has been registered twice for the same name alltheores:clean_zinc.
+[24May2022 23:11:46.281] [main/INFO] [Puzzles Lib/]: Registering 1 element(s) to registry of type minecraft:enchantment for mod id bagofholding
+[24May2022 23:11:47.631] [main/INFO] [Puzzles Lib/]: Registering 3 element(s) to registry of type minecraft:menu for mod id bagofholding
+[24May2022 23:11:47.861] [main/INFO] [Puzzles Lib/]: Registering 1 element(s) to registry of type minecraft:recipe_serializer for mod id bagofholding
+[24May2022 23:11:48.399] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexthe666.alexsmobs.entity.EntityLeafcutterAnt from class com.github.alexthe666.alexsmobs.entity.EntityDevilsHolePupfish
+[24May2022 23:11:48.446] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexthe666.alexsmobs.entity.EntityMantisShrimp from class com.github.alexthe666.alexsmobs.entity.EntitySkelewag
+[24May2022 23:11:48.514] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class untamedwilds.entity.ComplexMobTerrestrial from class untamedwilds.entity.ComplexMob
+[24May2022 23:11:48.547] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class untamedwilds.entity.ComplexMobTerrestrial from class untamedwilds.entity.ComplexMob
+[24May2022 23:11:48.730] [main/INFO] [alltheores/]: AllTheOres: loading config
+[24May2022 23:11:48.783] [Thread-0/INFO] [alltheores/]: AllTheOres: loading config
+[24May2022 23:11:48.958] [modloading-worker-0/INFO] [Mekanism/]: Version 10.2.0 initializing...
+[24May2022 23:11:48.989] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism Generators' module.
+[24May2022 23:11:48.968] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism: Tools' module.
+[24May2022 23:11:48.965] [modloading-worker-0/INFO] [untamedwilds.UntamedWilds/]: Registering Packets!
+[24May2022 23:11:48.963] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism: Additions' module.
+[24May2022 23:11:48.963] [modloading-worker-0/INFO] [Dungeon Crawl/]: Common Setup
+[24May2022 23:11:48.959] [modloading-worker-0/INFO] [diamethysts/]: Diamethysts common setup
+[24May2022 23:11:49.688] [modloading-worker-0/INFO] [Mekanism/]: Fake player readout: UUID = 46e82cd0-d480-3d48-800a-77431ede078e, name = [Mekanism]
+[24May2022 23:11:49.750] [modloading-worker-0/INFO] [Mekanism/]: Mod loaded.
+[24May2022 23:11:50.188] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Starting version check at https://raw.githubusercontent.com/MrCrayfish/ModUpdates/master/cgm/update.json
+[24May2022 23:11:50.971] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Found status: BETA Current: 1.2.1 Target: null
+[24May2022 23:11:50.972] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Starting version check at https://forge.curseupdate.com/32274/journeymap
+[24May2022 23:11:50.989] [modloading-worker-0/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Got request to register class com.sk89q.worldedit.forge.ForgePlatform with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@e366cdc]
+[24May2022 23:11:51.041] [modloading-worker-0/INFO] [com.sk89q.worldedit.forge.ForgeWorldEdit/]: WorldEdit for Forge (version 7.2.10+1742f98) is loaded
+[24May2022 23:11:51.101] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:aiming for minecraft:player
+[24May2022 23:11:51.103] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:shooting for minecraft:player
+[24May2022 23:11:51.112] [main/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key cgm:reloading for minecraft:player
+[24May2022 23:11:51.150] [main/INFO] [journeymap/]: Initializing Packet Registries
+[24May2022 23:11:51.404] [main/INFO] [Dungeon Crawl/]: Registering Structure Piece Types
+[24May2022 23:11:51.437] [modloading-worker-0/INFO] [diamethysts/]: Diamethysts server setup
+[24May2022 23:11:51.689] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Found status: OUTDATED Current: 5.8.0beta18 Target: 5.8.4
+[24May2022 23:11:51.703] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bagofholding] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/bagofholding.json
+[24May2022 23:11:52.029] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bagofholding] Found status: UP_TO_DATE Current: 3.1.0 Target: null
+[24May2022 23:11:52.046] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Starting version check at https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/AdditionalStructures.json
+[24May2022 23:11:52.271] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [additionalstructures] Found status: UP_TO_DATE Current: 3.0.3 Target: null
+[24May2022 23:11:52.290] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/puzzleslib.json
+[24May2022 23:11:52.572] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [puzzleslib] Found status: UP_TO_DATE Current: 3.3.3 Target: null
+[24May2022 23:11:52.591] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Starting version check at https://mrcrayfish.com/modupdatejson?id=framework
+[24May2022 23:11:53.448] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Found status: BETA Current: 0.2.3 Target: 0.2.3
+[24May2022 23:11:53.457] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[24May2022 23:11:54.131] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 40.1.0 Target: null
+[24May2022 23:11:56.133] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[24May2022 23:11:59.723] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/minecraft%20server/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2371!/assets/.mcassetsroot' uses unexpected schema
+[24May2022 23:11:59.724] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/minecraft%20server/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2371!/data/.mcassetsroot' uses unexpected schema
+[24May2022 23:12:07.039] [main/INFO] [com.sk89q.worldedit.extension.platform.PlatformCommandManager/]: Registering commands with com.sk89q.worldedit.forge.ForgePlatform
+[24May2022 23:12:07.231] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24May2022 23:12:07.235] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24May2022 23:12:07.245] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24May2022 23:12:07.248] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24May2022 23:12:07.254] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24May2022 23:12:07.299] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, create, name, dimension, location, color, announce] and [waypoint, create, name, dimension, location, color, player] with inputs: [true, false]
+[24May2022 23:12:07.303] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, delete, name, announce] and [waypoint, delete, name, player] with inputs: [true, false]
+[24May2022 23:12:18.878] [Worker-Main-13/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe useless_sword:ravager_sword_craft_2
+com.google.gson.JsonSyntaxException: Unknown item 'quark:ravager_hide'
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151280_(ShapedRecipe.java:276) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151278_(ShapedRecipe.java:275) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.Ingredient.m_43919_(Ingredient.java:222) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:27) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:143) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.Ingredient.m_43917_(Ingredient.java:197) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:262) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:157) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:67) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:34) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SimpleReloadInstance.java:68) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) [?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) [?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
+[24May2022 23:12:18.928] [Worker-Main-13/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe useless_sword:dragonbreathdiamondswordcraft2
+com.google.gson.JsonSyntaxException: Unknown item 'useless_sword:dragonbreathdiamondsword'
+	at net.minecraftforge.common.crafting.CraftingHelper.getItem(CraftingHelper.java:155) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:181) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151274_(ShapedRecipe.java:270) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapelessRecipe$Serializer.m_6729_(ShapelessRecipe.java:87) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapelessRecipe$Serializer.m_6729_(ShapelessRecipe.java:77) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:157) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:67) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:34) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SimpleReloadInstance.java:68) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) [?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) [?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
+[24May2022 23:12:19.007] [Worker-Main-13/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe useless_sword:shulkerswordcraft
+com.google.gson.JsonSyntaxException: Unknown item 'useless_sword:deleted_mod_element'
+	at net.minecraftforge.common.crafting.CraftingHelper.getItem(CraftingHelper.java:155) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:181) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151274_(ShapedRecipe.java:270) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:294) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:157) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:67) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:34) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SimpleReloadInstance.java:68) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) [?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) [?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
+[24May2022 23:12:19.087] [Worker-Main-13/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe useless_sword:guster_sword_recipe
+com.google.gson.JsonSyntaxException: Unknown item 'useless_sword:sandstonesword'
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151280_(ShapedRecipe.java:276) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151278_(ShapedRecipe.java:275) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.Ingredient.m_43919_(Ingredient.java:222) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:27) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:143) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.Ingredient.m_43917_(Ingredient.java:197) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_44210_(ShapedRecipe.java:262) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:289) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:157) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:67) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:34) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SimpleReloadInstance.java:68) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) [?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) [?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
+[24May2022 23:12:19.137] [Worker-Main-13/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe amethystequipment:amethyst_hammer_recipe
+com.google.gson.JsonSyntaxException: Unknown item 'hammermod:hammer_amethyst'
+	at net.minecraftforge.common.crafting.CraftingHelper.getItem(CraftingHelper.java:155) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:181) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe.m_151274_(ShapedRecipe.java:270) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:294) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.ShapedRecipe$Serializer.m_6729_(ShapedRecipe.java:285) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraftforge.common.extensions.IForgeRecipeSerializer.fromJson(IForgeRecipeSerializer.java:23) ~[forge-1.18.2-40.1.0-universal.jar%2375!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.fromJson(RecipeManager.java:157) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:67) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.world.item.crafting.RecipeManager.m_5787_(RecipeManager.java:34) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_10834_(SimpleReloadInstance.java:68) ~[server-1.18.2-20220404.173914-srg.jar%2371!/:?]
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:572) [?:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) [?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
+[24May2022 23:12:19.230] [Worker-Main-13/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 35 recipes
+[24May2022 23:12:19.446] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/zombie' into 'minecraft:entities/zombie'
+[24May2022 23:12:19.582] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/bastion_treasure' into 'minecraft:chests/bastion_treasure'
+[24May2022 23:12:19.694] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/village/village_toolsmith' into 'minecraft:chests/village/village_toolsmith'
+[24May2022 23:12:19.866] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/skeleton_horse' into 'minecraft:entities/skeleton_horse'
+[24May2022 23:12:19.950] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/skeleton' into 'minecraft:entities/skeleton'
+[24May2022 23:12:19.961] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/enderman' into 'minecraft:entities/enderman'
+[24May2022 23:12:20.120] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/nether_bridge' into 'minecraft:chests/nether_bridge'
+[24May2022 23:12:20.668] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/elder_guardian' into 'minecraft:entities/elder_guardian'
+[24May2022 23:12:20.680] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/creeper' into 'minecraft:entities/creeper'
+[24May2022 23:12:20.832] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/igloo_chest' into 'minecraft:chests/igloo_chest'
+[24May2022 23:12:20.867] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/spider' into 'minecraft:entities/spider'
+[24May2022 23:12:21.105] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/gameplay/fishing/treasure' into 'minecraft:gameplay/fishing/treasure'
+[24May2022 23:12:21.280] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/jungle_temple' into 'minecraft:chests/jungle_temple'
+[24May2022 23:12:21.314] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/gameplay/hero_of_the_village/weaponsmith_gift' into 'minecraft:gameplay/hero_of_the_village/weaponsmith_gift'
+[24May2022 23:12:21.534] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/wither' into 'minecraft:entities/wither'
+[24May2022 23:12:21.728] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/simple_dungeon' into 'minecraft:chests/simple_dungeon'
+[24May2022 23:12:21.794] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/village/village_temple' into 'minecraft:chests/village/village_temple'
+[24May2022 23:12:21.900] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/ruined_portal' into 'minecraft:chests/ruined_portal'
+[24May2022 23:12:22.041] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/shipwreck_supply' into 'minecraft:chests/shipwreck_supply'
+[24May2022 23:12:22.226] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/ender_dragon' into 'minecraft:entities/ender_dragon'
+[24May2022 23:12:22.318] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/abandoned_mineshaft' into 'minecraft:chests/abandoned_mineshaft'
+[24May2022 23:12:22.430] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/stronghold_corridor' into 'minecraft:chests/stronghold_corridor'
+[24May2022 23:12:22.599] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/guardian' into 'minecraft:entities/guardian'
+[24May2022 23:12:22.664] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/spawn_bonus_chest' into 'minecraft:chests/spawn_bonus_chest'
+[24May2022 23:12:22.702] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/entities/cave_spider' into 'minecraft:entities/cave_spider'
+[24May2022 23:12:22.718] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/buried_treasure' into 'minecraft:chests/buried_treasure'
+[24May2022 23:12:22.790] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/gameplay/piglin_bartering' into 'minecraft:gameplay/piglin_bartering'
+[24May2022 23:12:22.804] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/desert_pyramid' into 'minecraft:chests/desert_pyramid'
+[24May2022 23:12:22.818] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/underwater_ruin_big' into 'minecraft:chests/underwater_ruin_big'
+[24May2022 23:12:22.862] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/gameplay/fishing/junk' into 'minecraft:gameplay/fishing/junk'
+[24May2022 23:12:22.901] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/bastion_bridge' into 'minecraft:chests/bastion_bridge'
+[24May2022 23:12:23.077] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/village/village_butcher' into 'minecraft:chests/village/village_butcher'
+[24May2022 23:12:23.183] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/bastion_other' into 'minecraft:chests/bastion_other'
+[24May2022 23:12:23.223] [Worker-Main-13/INFO] [net.gendevo.stardewarmory.StardewArmory/]: Injecting loot table 'stardewarmory:inject/chests/woodland_mansion' into 'minecraft:chests/woodland_mansion'
+[24May2022 23:12:23.268] [Worker-Main-13/WARN] [net.minecraft.world.level.storage.loot.LootTables/]: Found validation problem in {minecraft:chests/pillager_outpost}.pools[8].entries[0].functions[2]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[24May2022 23:12:23.322] [Worker-Main-13/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement useless_sword:swordmaster: Expected item to be an item, was unknown string 'useless_sword:withersword'
+[24May2022 23:12:23.427] [Worker-Main-13/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1858 advancements
+[24May2022 23:12:23.430] [Worker-Main-13/INFO] [additionaladditions/]: [additionaladditions] Loaded 0 behaviours
+[24May2022 23:12:23.430] [Worker-Main-13/INFO] [Dungeon Crawl/]: Loading data...
+[24May2022 23:12:25.130] [Worker-Main-13/INFO] [Dungeon Crawl/]: Done.
+[24May2022 23:12:25.131] [Worker-Main-13/INFO] [untamedwilds.UntamedWilds/]: Beginning loading of data for data loader: spawn_tables
+[24May2022 23:12:25.134] [Worker-Main-13/INFO] [untamedwilds.UntamedWilds/]: Data loader for spawn_tables loaded 7 jsons
+[24May2022 23:12:25.134] [Worker-Main-13/INFO] [untamedwilds.UntamedWilds/]: Beginning loading of data for data loader: entities
+[24May2022 23:12:25.157] [Worker-Main-13/INFO] [untamedwilds.UntamedWilds/]: Data loader for entities loaded 26 jsons
+[24May2022 23:12:27.425] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.18.2
+[24May2022 23:12:27.425] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[24May2022 23:12:27.433] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[24May2022 23:12:27.434] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[24May2022 23:12:27.569] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on 192.168.10.7:25565
+[24May2022 23:12:27.585] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[24May2022 23:12:27.753] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[24May2022 23:12:27.753] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[24May2022 23:12:27.756] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[24May2022 23:12:27.757] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[24May2022 23:12:27.790] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[24May2022 23:12:27.791] [Thread-0/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[24May2022 23:12:27.794] [Thread-0/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[24May2022 23:12:27.814] [Server thread/INFO] [Puzzles Lib/]: Loading server config for bagofholding
+[24May2022 23:12:28.015] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[24May2022 23:12:28.246] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[24May2022 23:12:28.407] [Netty Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[24May2022 23:12:29.113] [Worker-Main-21/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:29.134] [Worker-Main-21/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:29.248] [Worker-Main-16/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:29.749] [Worker-Main-19/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:30.248] [Worker-Main-19/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:30.748] [Worker-Main-15/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[24May2022 23:12:31.249] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
+[24May2022 23:12:31.878] [Worker-Main-17/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
+[24May2022 23:12:32.248] [Worker-Main-19/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 21%
+[24May2022 23:12:32.748] [Worker-Main-17/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 33%
+[24May2022 23:12:32.913] [Netty Server IO #2/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[24May2022 23:12:33.247] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 48%
+[24May2022 23:12:33.748] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 98%
+[24May2022 23:12:34.487] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 6240 ms
+[24May2022 23:12:34.487] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (6.712s)! For help, type "help"
+[24May2022 23:12:34.526] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[24May2022 23:12:36.059] [Netty Server IO #3/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[24May2022 23:12:38.733] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2011ms or 40 ticks behind
+[24May2022 23:12:45.414] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@73f97a91
+[24May2022 23:12:45.437] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Lol4TheWin5[/178.152.85.55:65449] logged in with entity id 309 at (-4925.079388510098, 94.33554682181602, -997.5524762021366)
+[24May2022 23:12:45.488] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Lol4TheWin5 joined the game
+[24May2022 23:12:45.614] [Server thread/INFO] [untamedwilds.UntamedWilds/]: Firing player login event
+[24May2022 23:17:50.392] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Lol4TheWin5 lost connection: Disconnected
+[24May2022 23:17:50.393] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Lol4TheWin5 left the game
+[24May2022 23:19:35.578] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@39ff6283
+[24May2022 23:19:35.591] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Lol4TheWin5[/178.152.85.55:49173] logged in with entity id 1038 at (-4927.101960291353, 80.88828519069685, -970.8136631681826)
+[24May2022 23:19:35.607] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Lol4TheWin5 joined the game
+[24May2022 23:19:35.660] [Server thread/INFO] [untamedwilds.UntamedWilds/]: Firing player login event
+[24May2022 23:28:49.118] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 1000]
+[24May2022 23:38:54.801] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 1000]
+[24May2022 23:42:27.202] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 13000]
+[24May2022 23:44:04.606] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 1000]
+[24May2022 23:45:53.321] [Netty Server IO #10/ERROR] [net.minecraftforge.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[24May2022 23:45:53.327] [Netty Server IO #10/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: Disconnecting com.mojang.authlib.GameProfile@c1b4eba[id=<null>,name=mrZJordan,properties={},legacy=false] (/203.99.173.229:62627): Unexpected custom data from client
+[24May2022 23:45:53.342] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@c1b4eba[id=<null>,name=mrZJordan,properties={},legacy=false] (/203.99.173.229:62627) lost connection: Unexpected custom data from client
+[24May2022 23:48:44.704] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 1400]
+[24May2022 23:48:46.852] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 14000]
+[24May2022 23:48:58.001] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 16000]
+[24May2022 23:49:12.842] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Lol4TheWin5: Set the time to 1000]
+[24May2022 23:49:39.897] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] server shutting down
+[24May2022 23:49:42.271] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <Lol4TheWin5> no
+[24May2022 23:49:43.003] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <Lol4TheWin5> stop
+[24May2022 23:49:46.902] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <Lol4TheWin5> it is not shutting down
