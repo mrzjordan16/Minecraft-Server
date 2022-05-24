@@ -1,0 +1,186 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 5/17/22, 10:49 PM
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:55) ~[forge-1.18.2-40.1.0-universal.jar%2360!/:?] {re:classloading}
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:39) ~[forge-1.18.2-40.1.0-universal.jar%2360!/:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:112) ~[server-1.18.2-20220404.173914-srg.jar%2356!/:?] {re:classloading}
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:32) ~[fmlloader-1.18.2-40.1.0.jar%2316!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+-- MOD endlessocean --
+Details:
+	Caused by 0: java.lang.reflect.InvocationTargetException
+		at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:67) ~[javafmllanguage-1.18.2-40.1.0.jar%2358!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:106) ~[fmlcore-1.18.2-40.1.0.jar%2357!/:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+	Caused by 1: java.lang.NoClassDefFoundError: software/bernie/geckolib3/core/IAnimatable
+		at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?] {}
+		at java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[?:?] {}
+		at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:116) ~[securejarhandler-1.0.3.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.lambda$findClass$16(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:226) ~[securejarhandler-1.0.3.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:132) ~[securejarhandler-1.0.3.jar:?] {}
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?] {}
+		at com.nyfaria.endlessocean.init.EntityInit.<clinit>(EntityInit.java:30) ~[endlessocean-1.18.2-0.2.1-BETA.jar%2345!/:0.2.1-BETA] {re:classloading}
+		at com.nyfaria.endlessocean.EndlessOcean.<init>(EndlessOcean.java:44) ~[endlessocean-1.18.2-0.2.1-BETA.jar%2345!/:0.2.1-BETA] {re:classloading}
+		at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:67) ~[javafmllanguage-1.18.2-40.1.0.jar%2358!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:106) ~[fmlcore-1.18.2-40.1.0.jar%2357!/:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+	Mod File: endlessocean-1.18.2-0.2.1-BETA.jar
+	Failure message: Endless Ocean Aquatic Adventures (endlessocean) has failed to load correctly
+		java.lang.reflect.InvocationTargetException: null
+	Mod Version: 0.2.1-BETA
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ClassNotFoundException: software.bernie.geckolib3.core.IAnimatable
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:134) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:134) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?] {}
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?] {}
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1013) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:116) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$16(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:226) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:132) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?] {}
+	at com.nyfaria.endlessocean.init.EntityInit.<clinit>(EntityInit.java:30) ~[endlessocean-1.18.2-0.2.1-BETA.jar%2345!/:0.2.1-BETA] {re:classloading}
+	at com.nyfaria.endlessocean.EndlessOcean.<init>(EndlessOcean.java:44) ~[endlessocean-1.18.2-0.2.1-BETA.jar%2345!/:0.2.1-BETA] {re:classloading}
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:67) ~[javafmllanguage-1.18.2-40.1.0.jar%2358!/:?] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:106) ~[fmlcore-1.18.2-40.1.0.jar%2357!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 18.0.1.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 799804040 bytes (762 MiB) / 1111490560 bytes (1060 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Xeon(R) CPU           X5670  @ 2.93GHz
+	Identifier: Intel64 Family 6 Model 44 Stepping 2
+	Microarchitecture: Westmere (Server)
+	Frequency (GHz): 2.94
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Radeon RX 570 Series
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x67df
+	Graphics card #0 versionInfo: DriverVersion=30.0.15021.11005
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 1.33
+	Memory slot #0 type: Other
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 1.33
+	Memory slot #1 type: Other
+	Memory slot #2 capacity (MB): 4096.00
+	Memory slot #2 clockSpeed (GHz): 1.33
+	Memory slot #2 type: Other
+	Memory slot #3 capacity (MB): 4096.00
+	Memory slot #3 clockSpeed (GHz): 1.33
+	Memory slot #3 type: Other
+	Virtual memory max (MB): 44023.11
+	Virtual memory used (MB): 19556.95
+	Swap memory total (MB): 27648.00
+	Swap memory used (MB): 1639.02
+	JVM Flags: 1 total; -Xmx4G
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+	Mod List: 
+		server-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |COMMON_SET|Manifest: NOSIGNATURE
+		scorpions-1-18-x.jar                              |YDM's Scorpions               |scorpions                     |1.18.x-1.1          |COMMON_SET|Manifest: NOSIGNATURE
+		worldedit-mod-7.2.10.jar                          |WorldEdit                     |worldedit                     |7.2.10+1742f98      |COMMON_SET|Manifest: NOSIGNATURE
+		BagOfHolding-v3.1.0-1.18.2-Forge.jar              |Bag Of Holding                |bagofholding                  |3.1.0               |COMMON_SET|Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		additionaladditions-4.0.0.jar                     |Additional Additions          |additionaladditions           |4.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		another_furniture-1.18.2-1.0.3.jar                |Another Furniture Mod         |another_furniture             |1.0.3               |COMMON_SET|Manifest: NOSIGNATURE
+		Rex's-AdditionalStructures-1.18.2-(v.3.0.3).jar   |Additional Structures         |additionalstructures          |3.0.3               |COMMON_SET|Manifest: NOSIGNATURE
+		jei-1.18.2-9.7.0.193.jar                          |Just Enough Items             |jei                           |9.7.0.193           |COMMON_SET|Manifest: NOSIGNATURE
+		PuzzlesLib-v3.3.3-1.18.2-Forge.jar                |Puzzles Lib                   |puzzleslib                    |3.3.3               |COMMON_SET|Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		spark-1.9.1-forge.jar                             |spark                         |spark                         |1.9.1               |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-6.2.62-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.2.62              |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.18.2-40.1.0-universal.jar                 |Forge                         |forge                         |40.1.0              |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		Aquaculture-1.18.2-2.3.6.jar                      |Aquaculture 2                 |aquaculture                   |1.18.2-2.3.6        |COMMON_SET|Manifest: NOSIGNATURE
+		InvMove-1.18-0.7.0-Forge.jar                      |InvMove                       |invmove                       |0.7.0               |COMMON_SET|Manifest: NOSIGNATURE
+		Journey_-Map-Mod-1.18.2.jar                       |Journeymap                    |journeymap                    |5.8.0beta18         |COMMON_SET|Manifest: NOSIGNATURE
+		citadel-1.11.3-1.18.2.jar                         |Citadel                       |citadel                       |1.11.3              |COMMON_SET|Manifest: NOSIGNATURE
+		untamedwilds-1.18.2-2.1.3.jar                     |Untamed Wilds                 |untamedwilds                  |2.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		alltheores-1.9.5-1.18.2-40.1.0.jar                |AllTheOres                    |alltheores                    |1.9.5-1.18.2-40.1.0 |COMMON_SET|Manifest: NOSIGNATURE
+		endlessocean-1.18.2-0.2.1-BETA.jar                |Endless Ocean Aquatic Adventur|endlessocean                  |0.2.1-BETA          |ERROR     |Manifest: NOSIGNATURE
+	Crash Report UUID: 9acf9b3c-b4fb-45de-8921-24453f251ad7
+	FML: 40.1
+	Forge: net.minecraftforge:40.1.0
