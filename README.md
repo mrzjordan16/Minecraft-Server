@@ -11,6 +11,6 @@ mnehalb/nt-minecraft:*type-of-version
   
   java: Any Map but with volume attach option with ENTRYPOINT of *java* and default CMD of Old Map but can be replaced by any   CMD 
 
-**ANY MAP FILES CAN BE PLACED IN MOUNTED VOLUME BUT YOU HAVE TO SPECIFY COMMANDS~ENTRYPOINT AND ARGS~CMD IN YAML FILE**
+**ANY MAP FILES CAN BE PLACED IN MOUNTED VOLUME BUT YOU HAVE TO SPECIFY COMMANDS~ENTRYPOINT AND CMD~ARGS IN YAML FILE**
 
   
